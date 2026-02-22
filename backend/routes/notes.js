@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Note = require('../models/Note');
 
-// GET all notes
 router.get('/', async (req, res) => {
   try {
     const notes = await Note.find().sort({ createdAt: -1 });
@@ -12,7 +11,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-// POST create note
 router.post('/', async (req, res) => {
   try {
     const note = await Note.create(req.body);
@@ -22,8 +20,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// DELETE note
-router.delete('/:id', async (req, res) => {
+ router.delete('/:id', async (req, res) => {
   try {
     await Note.findByIdAndDelete(req.params.id);
     res.json({ message: 'Note deleted' });
