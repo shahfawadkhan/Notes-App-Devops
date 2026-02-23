@@ -4,8 +4,6 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const unusedVar = "this will warn";
-const x;
 
 app.use(cors());
 app.use(express.json());
