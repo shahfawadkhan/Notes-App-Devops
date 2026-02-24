@@ -24,7 +24,10 @@ services:
       - notes-network
     
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://15.134.208.174:5000/api
     container_name: frontend
     ports:
       - "3000:3000"
