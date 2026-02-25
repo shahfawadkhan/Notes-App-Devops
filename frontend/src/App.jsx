@@ -49,7 +49,7 @@ export default function App() {
     <div className="min-h-screen bg-gray-950 text-white">
       <header className="bg-gray-900 border-b border-gray-800 px-6 py-4">
         <h1 className="text-2xl font-bold text-yellow-400">📝 Notes App</h1>
-        <p className="text-gray-400 text-sm mt-1">MERN + Tailwind — DevOps Practice Project</p>
+        <p className="text-gray-400 text-sm mt-1">DEVOPS -- PRACTICE **Changes For cd**</p>
       </header>
 
       <main className="max-w-2xl mx-auto px-4 py-8">
