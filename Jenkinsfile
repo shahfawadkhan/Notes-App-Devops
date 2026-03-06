@@ -41,7 +41,7 @@ EOF
             steps {
                 sh'''
                 echo "running docker images with docker compose..."
-                docker compose up -d
+                docker compose up -d --build
 
                 echo "showing running containers ..."
                 docker ps
