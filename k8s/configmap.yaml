@@ -1,0 +1,8 @@
+apiVersion : v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: notes-app-devops
+data:
+  MONGO_HOST: mongo
+  FRONTEND_URL: http://localhost:5000/api/notes
